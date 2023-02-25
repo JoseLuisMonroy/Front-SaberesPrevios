@@ -1,5 +1,6 @@
 <template>
-  <div class="hello">
+  <div class="homePage">
+    
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   props: {
     msg: String
   }
@@ -41,6 +42,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.homePage {
+  text-align: center;
+  margin-top: 100px;
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -53,6 +58,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #000000;
 }
 </style>
