@@ -1,13 +1,15 @@
 <template>
+<div class="navigation" >
     <nav>
         <a> ESCOM</a>
         <ul>
-        <li><a href="/Login">Login</a></li>
+        <li><a href="/Login">Consulta</a></li>
         <li><a href="/Registro">Registro</a></li>
         <li><a href="/">Inicio</a></li>
         </ul>
     </nav>
-    </template>
+</div>
+</template>
 
   
   <script>
@@ -17,11 +19,19 @@
   </script>
   
 <style>
-nav {
 
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    align-items: center;
+}
+nav {
     background-color: #ffffff;
     overflow: hidden;
-    position: fixed;
     align-items: center;
     top: 0;
     left: 0;
@@ -32,7 +42,6 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 nav li {
@@ -41,10 +50,10 @@ nav li {
 nav li a {
     display: block;
     align-items: center;
-    font-size: 1em;
+    font-size: .8em;
     color: rgb(34, 34, 34);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
 }
 nav li a:hover {
@@ -63,7 +72,7 @@ nav a {
     font-weight: bold;
     color: rgb(27,99,149);
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: none;
 }
 </style>
