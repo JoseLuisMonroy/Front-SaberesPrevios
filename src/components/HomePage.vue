@@ -1,11 +1,11 @@
 <template>
   <div class="homePage">
-    <h1>Escuela Superior de Cómputo</h1>
-    <h2>{{ msg }}</h2>
+      <h1>Escuela Superior de Cómputo</h1>
+      <h2>{{ msg }}</h2>
   </div>
   <div class="Descripcion">
-    <div class="fotoEscuela">
-      <img src="http://www.contrareplica.mx/uploads/2019/08/14/normal/c8be3b0373b45bba54498a22d53ad768.jpg" alt="Escudo IPN" width="200" height="200">
+    <div>
+      <img src="http://www.contrareplica.mx/uploads/2019/08/14/normal/c8be3b0373b45bba54498a22d53ad768.jpg" alt="Escudo IPN" width="200" height="200" class="fotoEscuela">
     </div>
   <!-- á é í ó ú Á É Í Ó Ú> -->
     <div class="Bienvenida">
@@ -16,6 +16,10 @@
         asi mismo la fecha en la que podras llevar a cabo tu examen diagnóstico.</p>
       <p>Este examen no determinará nada, es simplemente estadístico.</p><br>
       <h2 class="Suerte">¡¡¡Mucha suerte!!!</h2>
+    </div>
+    <div class="division">
+      <div class="punto"></div>
+      <div class="linea"></div>
     </div>
     <div class="Banner">
       <h1>Ya entré ¿Y ahora?</h1>
@@ -32,6 +36,11 @@
         Una vez registrado, podrás ver la fecha en la que podrás presentar tu examen de diagnóstico, asi como la información en tu ficha.
       </p>
     </div>
+    <div class="division">
+      <div class="punto"></div>
+      <div class="linea"></div>
+    </div>
+      <img src="../assets/escudoESCOM.png" alt="Logo Escom" class="escom">
     <div class="Adios">
       <h1>Nos vemos pronto!!</h1>
     </div>
@@ -39,7 +48,7 @@
   
 </template>
 
-<script>
+<script >
 export default {
   name: 'HomePage',
   props: {
@@ -58,8 +67,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
+
 h1 {
   font-size: 2rem;
   color: #eeeeee;
@@ -68,9 +77,51 @@ h2 {
   font-size: 1.5rem;
   color: #ebebeb;
 }
+.division{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
+@media screen and (max-width: 7680px) {
+  .escom{
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding: 2rem;
+}
+  .punto{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(27,99,149);
+    margin: 0 1rem;
+  }
+  .linea{
+    width: 50%;
+    height: 1rem;
+    background-color: rgb(27,99,149);
+    border-radius: 1rem;
+  }
+  .Bienvenida{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  .fotoEscuela{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 80%;
+  height: auto;
+}
+}
 .Registro{
-  width: 20rem;
+  width: 19rem;
   height: 10rem;
   background-color: rgb(27,99,149);
   border-radius: .5rem;
@@ -83,16 +134,6 @@ h2 {
 .Registro p{
   color: #ebebeb;
   text-decoration: none;
-}
-
-.Bienvenida{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1rem;
 }
 .Bienvenida h2, .Banner h1, .Adios h1{
   color: rgb(27,99,149);
@@ -112,11 +153,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10rem;
-}
-
-.fotoEscuela{
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding-top: 4rem;
 }
 
 .Suerte{
@@ -142,7 +179,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 </style>
