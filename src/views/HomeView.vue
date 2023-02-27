@@ -18,11 +18,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
-  margin-top: 2.2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  left: 20%;
+  width: 101%;
   height: 15rem;
   display: flex;
   flex-direction: column;
