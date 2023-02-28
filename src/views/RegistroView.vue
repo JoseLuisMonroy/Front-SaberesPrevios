@@ -1,25 +1,18 @@
 <template>
-    <div class="about">
-      <h1>Bienvendio al registro</h1>
+    <div class="registro">
+      <RegistroPage/>
     </div>
   </template>
 
-<style scoped>
-.about {
-  margin-top: 2.2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(27,99,149);
+<script>
+import RegistroPage from '@/components/RegistroPage.vue'
+
+export default {
+  name: 'RegistroView', 
+  components: {
+    RegistroPage,
+  },
 }
-h1 {
-  font-size: 2rem;
-  color: #eeeeee;
-}
-</style>
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->

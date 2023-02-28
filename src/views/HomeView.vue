@@ -19,7 +19,7 @@ export default {
 <style scoped>
 .home {
   left: 20%;
-  width: 101%;
+  width: 100%;
   height: 15rem;
   display: flex;
   flex-direction: column;
