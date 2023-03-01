@@ -2,10 +2,10 @@
   <div class="conteiner">
     <nav class="Navigation">
       <a>ESCOM</a>
-      <div>
-        <router-link to="/Login" class="seccion">Login</router-link>
-        <router-link to="/Registro" class="seccion1">Registro</router-link>
-        <router-link to="/" class="seccion2">Home</router-link>
+      <div onclick="set0()" >
+        <router-link to="/login" class="seccion">Consultas</router-link>
+        <router-link to="/registro" class="seccion1">Registro</router-link>
+        <router-link to="/" class="seccion2">Inicio</router-link>
       </div>
     </nav>
   </div>
@@ -16,22 +16,6 @@
 
 
 <script>
-window.addEventListener("scroll", function() {
-  var navbar = document.querySelector(".conteiner");
-  navbar.classList.toggle("scrolled", window.scrollY > 0);
-});
-window.addEventListener("scroll", function() {
-  var button = document.querySelector(".seccion");
-  button.classList.toggle("scrolled", window.scrollY > 0);
-});
-window.addEventListener("scroll", function() {
-  var button = document.querySelector(".seccion1");
-  button.classList.toggle("scrolled", window.scrollY > 0);
-});
-window.addEventListener("scroll", function() {
-  var button = document.querySelector(".seccion2");
-  button.classList.toggle("scrolled", window.scrollY > 0);
-});
 </script>
 
 <style>
@@ -56,10 +40,6 @@ window.addEventListener("scroll", function() {
   color: rgb(27,99,149);
   transition: background-color 0.2s ease;
 }
-.conteiner.scrolled {
-  background-color: rgb(27,99,149);
-  color: #ffffff;
-}
 
 nav a {
   float: left;
@@ -83,15 +63,6 @@ nav a {
     background-color: rgb(27,99,149);
     color: #ffffff;
 }
-.seccion.scrolled, .seccion1.scrolled, .seccion2.scrolled {
-  background-color: rgb(27,99,149);
-  color: #ffffff;
-}
-.seccion.scrolled:hover, .seccion1.scrolled:hover, .seccion2.scrolled:hover {
-  background-color: rgb(247, 247, 247);
-  color: rgb(27,99,149);
-}
-
 
 router-link{
     float: right;
